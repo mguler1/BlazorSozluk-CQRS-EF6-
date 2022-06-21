@@ -12,7 +12,10 @@ namespace BlazorSozluk.InfastructurePersistance.Context
     public class BlazorSozlukContext : DbContext
     {
         public const string DEFAULT_SCHEMA = "dbo";
+        public BlazorSozlukContext()
+        {
 
+        }
         public BlazorSozlukContext(DbContextOptions options) : base(options)
         {
 
@@ -33,6 +36,17 @@ namespace BlazorSozluk.InfastructurePersistance.Context
 
         public DbSet<EMailConfirmation> EmailConfirmations { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                var constr = "Data Source=MEHDI\\GULER;Initial Catalog=BlazorSozluk;Persist Security Info=True;user=sa;password=123456;";
+                optionsBuilder.UseSqlServer(constr, opt =>
+                {
+                    opt.EnableRetryOnFailure();
+                });
+            }
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
