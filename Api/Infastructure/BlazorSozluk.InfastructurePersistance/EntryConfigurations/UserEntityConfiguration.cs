@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.InfastructurePersistance.EntryConfigurations
 {
-    public class UserEntityConfiguration: BaseEntityConfiguration<Api.Domain.Models.User>
+    public class UserEntityConfiguration: BaseEntityConfiguration<Api.Domain.Models.Users>
     {
-        public override void Configure(EntityTypeBuilder<User> builder)
+        public override void Configure(EntityTypeBuilder<Users> builder)
         {
             base.Configure(builder);
             builder.ToTable("user", BlazorSozlukContext.DEFAULT_SCHEMA);

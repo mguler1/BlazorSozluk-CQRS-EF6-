@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Api.Domain.Models
 {
-    public class User : BaseEntity
+    public class Users : BaseEntity
     {
         public string FirstName { get; set; }
 

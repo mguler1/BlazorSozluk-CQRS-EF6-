@@ -20,7 +20,7 @@ namespace BlazorSozluk.InfastructurePersistance.Context
         {
 
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Users> Users { get; set; }
 
         public DbSet<Entry> Entries { get; set; }
 
@@ -40,7 +40,7 @@ namespace BlazorSozluk.InfastructurePersistance.Context
         {
             if (!optionsBuilder.IsConfigured)
             {
-                var constr = "Data Source=MEHDI\\GULER;Initial Catalog=BlazorSozluk;Persist Security Info=True;user=sa;password=123456;";
+                var constr = "Data Source=.;Initial Catalog=BlazorSozluk;integrated security=true;";
                 optionsBuilder.UseSqlServer(constr, opt =>
                 {
                     opt.EnableRetryOnFailure();

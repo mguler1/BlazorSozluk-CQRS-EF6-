@@ -21,23 +21,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{174C5E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BlazorWeb", "BlazorWeb", "{1EAACF41-078E-44F8-95D4-6E64A6357635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Common", "Common\BlazorSozluk.Common\BlazorSozluk.Common.csproj", "{9EB9B02F-60B9-488E-86D7-1AB39E7605EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Common", "Common\BlazorSozluk.Common\BlazorSozluk.Common.csproj", "{9EB9B02F-60B9-488E-86D7-1AB39E7605EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Api.Domain", "Api\Core\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj", "{5CB23C5D-0D09-43B6-9D11-F77EFEC1144F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Api.Domain", "Api\Core\BlazorSozluk.Api.Domain\BlazorSozluk.Api.Domain.csproj", "{5CB23C5D-0D09-43B6-9D11-F77EFEC1144F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Application", "Api\Core\BlazorSozluk.Application\BlazorSozluk.Application.csproj", "{C4FC0053-8DDC-46D9-8ADC-D4DD2B1C38DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Application", "Api\Core\BlazorSozluk.Application\BlazorSozluk.Application.csproj", "{C4FC0053-8DDC-46D9-8ADC-D4DD2B1C38DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.InfastructurePersistance", "Api\Infastructure\BlazorSozluk.InfastructurePersistance\BlazorSozluk.InfastructurePersistance.csproj", "{A0A2A547-C7CC-4E0B-8C2F-495FB5D574C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.InfastructurePersistance", "Api\Infastructure\BlazorSozluk.InfastructurePersistance\BlazorSozluk.InfastructurePersistance.csproj", "{A0A2A547-C7CC-4E0B-8C2F-495FB5D574C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.WebApi", "Api\WebApi\BlazorSozluk.WebApi\BlazorSozluk.WebApi.csproj", "{EBF26A37-E7CF-481C-9769-B1CE5015C85A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.WebApi", "Api\WebApi\BlazorSozluk.WebApi\BlazorSozluk.WebApi.csproj", "{EBF26A37-E7CF-481C-9769-B1CE5015C85A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.FavoriteService", "Projections\BlazorSozluk.Projections.FavoriteService\BlazorSozluk.Projections.FavoriteService.csproj", "{67F88A59-16F3-4DD9-A888-5675DEA4D96D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.FavoriteService", "Projections\BlazorSozluk.Projections.FavoriteService\BlazorSozluk.Projections.FavoriteService.csproj", "{67F88A59-16F3-4DD9-A888-5675DEA4D96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.UsersService", "Projections\BlazorSozluk.Projections.Users\BlazorSozluk.Projections.UsersService.csproj", "{CD3E09B3-0FAB-4520-A459-CADCE8788930}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.UsersService", "Projections\BlazorSozluk.Projections.Users\BlazorSozluk.Projections.UsersService.csproj", "{CD3E09B3-0FAB-4520-A459-CADCE8788930}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.Projections.VoteService", "Projections\BlazorSozluk.Projections.VoteService\BlazorSozluk.Projections.VoteService.csproj", "{CAB558E4-5116-49BA-BC5C-624DC5CEFC22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.Projections.VoteService", "Projections\BlazorSozluk.Projections.VoteService\BlazorSozluk.Projections.VoteService.csproj", "{CAB558E4-5116-49BA-BC5C-624DC5CEFC22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSozluk.WebApp", "Clients\BlazorWeb\BlazorSozluk.WebApp\BlazorSozluk.WebApp.csproj", "{91DDD57E-AB91-4C83-B28B-F519A5305B5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSozluk.WebApp", "Clients\BlazorWeb\BlazorSozluk.WebApp\BlazorSozluk.WebApp.csproj", "{91DDD57E-AB91-4C83-B28B-F519A5305B5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

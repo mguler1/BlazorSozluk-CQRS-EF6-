@@ -15,7 +15,7 @@ namespace BlazorSozluk.Api.Domain.Models
 
         public Guid CreatedById { get; set; }
 
-        public virtual User CreatedBy { get; set; }
+        public virtual Users CreatedBy { get; set; }
 
         public virtual ICollection<EntryComment> EntryComments { get; set; }
 

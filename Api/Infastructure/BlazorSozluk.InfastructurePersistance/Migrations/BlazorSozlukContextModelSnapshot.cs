@@ -204,7 +204,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
                     b.ToTable("entryvote", "dbo");
                 });
 
-            modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.User", b =>
+            modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.Users", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -244,7 +244,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
 
             modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.Entry", b =>
                 {
-                    b.HasOne("BlazorSozluk.Api.Domain.Models.User", "CreatedBy")
+                    b.HasOne("BlazorSozluk.Api.Domain.Models.Users", "CreatedBy")
                         .WithMany("Entries")
                         .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -255,7 +255,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
 
             modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.EntryComment", b =>
                 {
-                    b.HasOne("BlazorSozluk.Api.Domain.Models.User", "CreatedBy")
+                    b.HasOne("BlazorSozluk.Api.Domain.Models.Users", "CreatedBy")
                         .WithMany("EntryComments")
                         .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -274,7 +274,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
 
             modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.EntryCommentFavorite", b =>
                 {
-                    b.HasOne("BlazorSozluk.Api.Domain.Models.User", "CreatedUser")
+                    b.HasOne("BlazorSozluk.Api.Domain.Models.Users", "CreatedUser")
                         .WithMany("EntryCommentFavorites")
                         .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -304,7 +304,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
 
             modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.EntryFavorite", b =>
                 {
-                    b.HasOne("BlazorSozluk.Api.Domain.Models.User", "CreatedUser")
+                    b.HasOne("BlazorSozluk.Api.Domain.Models.Users", "CreatedUser")
                         .WithMany("EntryFavorites")
                         .HasForeignKey("CreatedById")
                         .OnDelete(DeleteBehavior.Restrict)
@@ -348,7 +348,7 @@ namespace BlazorSozluk.InfastructurePersistance.Migrations
                     b.Navigation("EntryCommentVotes");
                 });
 
-            modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.User", b =>
+            modelBuilder.Entity("BlazorSozluk.Api.Domain.Models.Users", b =>
                 {
                     b.Navigation("Entries");
 

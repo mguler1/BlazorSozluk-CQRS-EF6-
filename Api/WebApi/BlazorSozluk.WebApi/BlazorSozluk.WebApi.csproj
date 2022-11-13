@@ -14,4 +14,8 @@
     <ProjectReference Include="..\..\Infastructure\BlazorSozluk.InfastructurePersistance\BlazorSozluk.InfastructurePersistance.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>
