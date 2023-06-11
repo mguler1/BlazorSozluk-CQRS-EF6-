@@ -1,4 +1,6 @@
-﻿using BlazorSozluk.InfastructurePersistance.Context;
+﻿using BlazorSozluk.Application.Interfaces.Repositories;
+using BlazorSozluk.InfastructurePersistance.Context;
+using BlazorSozluk.InfastructurePersistance.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,8 +24,9 @@ namespace BlazorSozluk.InfastructurePersistance.Extensions
                     opt.EnableRetryOnFailure();
                 });
             });
-            var seedData = new SeedData();
-            seedData.SeedAsync(configuration).GetAwaiter().GetResult();
+            //var seedData = new SeedData();
+            //seedData.SeedAsync(configuration).GetAwaiter().GetResult();
+            services.AddScoped<IUserRepository,UserRepository>();
             return services;
         }
     }

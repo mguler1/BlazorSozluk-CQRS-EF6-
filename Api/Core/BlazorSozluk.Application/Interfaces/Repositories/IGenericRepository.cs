@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BlazorSozluk.Application.Interfaces.Repositories
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntity, new()
+    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
     {
         Task<int> AddAsync(TEntity entity);
         int Add(TEntity entity);
